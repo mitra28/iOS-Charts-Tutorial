@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27222F11C5F95560F92990A4 /* Pods_Charts_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FD60951BB76480F802F541 /* Pods_Charts_Tutorial.framework */; };
 		EC18F571267C158200A22784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18F570267C158200A22784 /* AppDelegate.swift */; };
 		EC18F573267C158200A22784 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18F572267C158200A22784 /* SceneDelegate.swift */; };
 		EC18F575267C158200A22784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18F574267C158200A22784 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08FD60951BB76480F802F541 /* Pods_Charts_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charts_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC4FA51EA011F1A78DA006B /* Pods-Charts-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Charts-Tutorial/Pods-Charts-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		CA023AE23EA02D86829188E4 /* Pods-Charts-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-Charts-Tutorial/Pods-Charts-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		EC18F56D267C158200A22784 /* Charts-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC18F570267C158200A22784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC18F572267C158200A22784 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27222F11C5F95560F92990A4 /* Pods_Charts_Tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3175090BD83C2841C0EFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08FD60951BB76480F802F541 /* Pods_Charts_Tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3216B759361BDBB6405F6842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BC4FA51EA011F1A78DA006B /* Pods-Charts-Tutorial.debug.xcconfig */,
+				CA023AE23EA02D86829188E4 /* Pods-Charts-Tutorial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC18F564267C158200A22784 = {
 			isa = PBXGroup;
 			children = (
 				EC18F56F267C158200A22784 /* Charts-Tutorial */,
 				EC18F56E267C158200A22784 /* Products */,
+				3216B759361BDBB6405F6842 /* Pods */,
+				1C3175090BD83C2841C0EFA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC18F581267C158300A22784 /* Build configuration list for PBXNativeTarget "Charts-Tutorial" */;
 			buildPhases = (
+				C92C383C3BA0A2D372F2125E /* [CP] Check Pods Manifest.lock */,
 				EC18F569267C158200A22784 /* Sources */,
 				EC18F56A267C158200A22784 /* Frameworks */,
 				EC18F56B267C158200A22784 /* Resources */,
+				5D37B1A85D8489E6FA87DFAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D37B1A85D8489E6FA87DFAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Charts-Tutorial/Pods-Charts-Tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Charts-Tutorial/Pods-Charts-Tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Charts-Tutorial/Pods-Charts-Tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C92C383C3BA0A2D372F2125E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Charts-Tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC18F569267C158200A22784 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		EC18F582267C158300A22784 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC4FA51EA011F1A78DA006B /* Pods-Charts-Tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		EC18F583267C158300A22784 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA023AE23EA02D86829188E4 /* Pods-Charts-Tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
